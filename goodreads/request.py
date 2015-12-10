@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import requests
 import xmltodict
 import json
@@ -13,7 +14,7 @@ class GoodreadsRequestException(Exception):
 class GoodreadsRequest():
     def __init__(self, client, path, query_dict, req_format='xml'):
         """Initialize request object."""
-        self.params = dict(query_dict.items() + client.query_dict.items())
+        self.params = dict(list(query_dict.items()) + list(client.query_dict.items()))
         self.host = client.base_url
         self.path = path
         self.req_format = req_format

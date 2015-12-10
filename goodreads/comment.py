@@ -1,6 +1,7 @@
 """Class for Goodreads comments"""
+from __future__ import absolute_import
 
-import user
+from . import user
 
 class GoodreadsComment:
     """Goodreads comment class"""

@@ -1,4 +1,5 @@
 """Test functions for User"""
+from __future__ import absolute_import
 
 from nose.tools import ok_, nottest, eq_
 from tests import client_test

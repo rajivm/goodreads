@@ -1,6 +1,7 @@
 """Class definition for owned books"""
+from __future__ import absolute_import
 
-import book
+from . import book
 
 class GoodreadsOwnedBook:
     def __init__(self, owned_book_dict):

@@ -1,4 +1,5 @@
 """Test functions for GoodreadsAuthor"""
+from __future__ import absolute_import
 
 from nose.tools import ok_, eq_, nottest
 from tests import client_test

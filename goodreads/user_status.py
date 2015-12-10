@@ -1,6 +1,7 @@
-import user
-import book
-import comment
+from __future__ import absolute_import
+from . import user
+from . import book
+from . import comment
 
 class GoodreadsUserStatus:
     def __init__(self, user_status_dict):

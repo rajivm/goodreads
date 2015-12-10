@@ -1,5 +1,6 @@
-import book
-import user
+from __future__ import absolute_import
+from . import book
+from . import user
 
 class GoodreadsAuthor:
     def __init__(self, author_dict, client):
